@@ -123,10 +123,10 @@ INSERT INTO `sys_permission` VALUES ('63', '1', '60', '机构启/禁用', '/admi
 INSERT INTO `sys_permission` VALUES ('65', '1', '60', '机构删除', '/admin/office/delete', '1', '0', '1', 'fa-trash-o red');
 
 -- ----------------------------
--- Table structure for `sys_re_role_permission`
+-- Table structure for `sys_role_permission`
 -- ----------------------------
-DROP TABLE IF EXISTS `sys_re_role_permission`;
-CREATE TABLE `sys_re_role_permission` (
+DROP TABLE IF EXISTS `sys_role_permission`;
+CREATE TABLE `sys_role_permission` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `roleId` int(11) NOT NULL COMMENT '角色ID',
   `permissionId` int(11) NOT NULL COMMENT '权限ID',
@@ -141,55 +141,55 @@ CREATE TABLE `sys_re_role_permission` (
 -- ----------------------------
 -- Records of sys_re_role_permission
 -- ----------------------------
-INSERT INTO `sys_re_role_permission` VALUES ('345', '1', '33', '81');
-INSERT INTO `sys_re_role_permission` VALUES ('346', '1', '35', '81');
-INSERT INTO `sys_re_role_permission` VALUES ('347', '1', '36', '81');
-INSERT INTO `sys_re_role_permission` VALUES ('348', '1', '59', '81');
-INSERT INTO `sys_re_role_permission` VALUES ('349', '1', '55', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('350', '1', '47', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('351', '1', '56', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('352', '1', '44', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('353', '1', '48', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('354', '1', '50', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('355', '1', '49', '82');
-INSERT INTO `sys_re_role_permission` VALUES ('387', '1', '39', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('388', '1', '41', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('389', '1', '42', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('390', '1', '60', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('391', '1', '61', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('392', '1', '62', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('393', '1', '63', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('394', '1', '65', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('395', '1', '3', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('396', '1', '23', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('397', '1', '10', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('398', '1', '11', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('399', '1', '13', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('400', '1', '14', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('401', '1', '27', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('402', '1', '2', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('403', '1', '22', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('404', '1', '6', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('405', '1', '7', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('406', '1', '9', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('407', '1', '26', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('408', '1', '4', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('409', '1', '24', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('410', '1', '16', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('411', '1', '17', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('412', '1', '19', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('413', '1', '20', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('414', '1', '28', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('415', '1', '5', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('416', '1', '25', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('417', '1', '29', '1');
-INSERT INTO `sys_re_role_permission` VALUES ('418', '1', '30', '1');
+INSERT INTO `sys_role_permission` VALUES ('345', '1', '33', '81');
+INSERT INTO `sys_role_permission` VALUES ('346', '1', '35', '81');
+INSERT INTO `sys_role_permission` VALUES ('347', '1', '36', '81');
+INSERT INTO `sys_role_permission` VALUES ('348', '1', '59', '81');
+INSERT INTO `sys_role_permission` VALUES ('349', '1', '55', '82');
+INSERT INTO `sys_role_permission` VALUES ('350', '1', '47', '82');
+INSERT INTO `sys_role_permission` VALUES ('351', '1', '56', '82');
+INSERT INTO `sys_role_permission` VALUES ('352', '1', '44', '82');
+INSERT INTO `sys_role_permission` VALUES ('353', '1', '48', '82');
+INSERT INTO `sys_role_permission` VALUES ('354', '1', '50', '82');
+INSERT INTO `sys_role_permission` VALUES ('355', '1', '49', '82');
+INSERT INTO `sys_role_permission` VALUES ('387', '1', '39', '1');
+INSERT INTO `sys_role_permission` VALUES ('388', '1', '41', '1');
+INSERT INTO `sys_role_permission` VALUES ('389', '1', '42', '1');
+INSERT INTO `sys_role_permission` VALUES ('390', '1', '60', '1');
+INSERT INTO `sys_role_permission` VALUES ('391', '1', '61', '1');
+INSERT INTO `sys_role_permission` VALUES ('392', '1', '62', '1');
+INSERT INTO `sys_role_permission` VALUES ('393', '1', '63', '1');
+INSERT INTO `sys_role_permission` VALUES ('394', '1', '65', '1');
+INSERT INTO `sys_role_permission` VALUES ('395', '1', '3', '1');
+INSERT INTO `sys_role_permission` VALUES ('396', '1', '23', '1');
+INSERT INTO `sys_role_permission` VALUES ('397', '1', '10', '1');
+INSERT INTO `sys_role_permission` VALUES ('398', '1', '11', '1');
+INSERT INTO `sys_role_permission` VALUES ('399', '1', '13', '1');
+INSERT INTO `sys_role_permission` VALUES ('400', '1', '14', '1');
+INSERT INTO `sys_role_permission` VALUES ('401', '1', '27', '1');
+INSERT INTO `sys_role_permission` VALUES ('402', '1', '2', '1');
+INSERT INTO `sys_role_permission` VALUES ('403', '1', '22', '1');
+INSERT INTO `sys_role_permission` VALUES ('404', '1', '6', '1');
+INSERT INTO `sys_role_permission` VALUES ('405', '1', '7', '1');
+INSERT INTO `sys_role_permission` VALUES ('406', '1', '9', '1');
+INSERT INTO `sys_role_permission` VALUES ('407', '1', '26', '1');
+INSERT INTO `sys_role_permission` VALUES ('408', '1', '4', '1');
+INSERT INTO `sys_role_permission` VALUES ('409', '1', '24', '1');
+INSERT INTO `sys_role_permission` VALUES ('410', '1', '16', '1');
+INSERT INTO `sys_role_permission` VALUES ('411', '1', '17', '1');
+INSERT INTO `sys_role_permission` VALUES ('412', '1', '19', '1');
+INSERT INTO `sys_role_permission` VALUES ('413', '1', '20', '1');
+INSERT INTO `sys_role_permission` VALUES ('414', '1', '28', '1');
+INSERT INTO `sys_role_permission` VALUES ('415', '1', '5', '1');
+INSERT INTO `sys_role_permission` VALUES ('416', '1', '25', '1');
+INSERT INTO `sys_role_permission` VALUES ('417', '1', '29', '1');
+INSERT INTO `sys_role_permission` VALUES ('418', '1', '30', '1');
 
 -- ----------------------------
--- Table structure for `sys_re_user_role`
+-- Table structure for `sys_user_role`
 -- ----------------------------
-DROP TABLE IF EXISTS `sys_re_user_role`;
-CREATE TABLE `sys_re_user_role` (
+DROP TABLE IF EXISTS `sys_user_role`;
+CREATE TABLE `sys_user_role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) NOT NULL COMMENT '用户ID ',
   `roleId` int(11) NOT NULL COMMENT '角色ID',
@@ -203,7 +203,7 @@ CREATE TABLE `sys_re_user_role` (
 -- ----------------------------
 -- Records of sys_re_user_role
 -- ----------------------------
-INSERT INTO `sys_re_user_role` VALUES ('33', '2', '1');
+INSERT INTO `sys_user_role` VALUES ('33', '2', '1');
 
 -- ----------------------------
 -- Table structure for `sys_role`
