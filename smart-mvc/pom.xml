@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -10,7 +11,7 @@
 	<artifactId>smart-mvc</artifactId>
 	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	
+
 	<dependencies>
 		<!-- J2EE支持 -->
 		<dependency>
@@ -54,7 +55,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
 		</dependency>
-	
+
 		<!-- mybatis核心包 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -72,11 +73,24 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 		</dependency>
-		
-		<!-- JPA支持-->
+
+		<!-- JPA支持 -->
 		<dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>persistence-api</artifactId>
-        </dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+		</dependency>
+
+		<!-- JWT -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.0</version>
+		</dependency>
+
+		<!-- GSON -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
 	</dependencies>
 </project>
