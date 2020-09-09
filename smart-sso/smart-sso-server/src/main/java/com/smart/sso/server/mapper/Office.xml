@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.smart.sso.server.dao.OfficeDao">
+
+	<select id="getChildNodes" resultType="com.smart.sso.server.model.Office">
+		SELECT
+		id,parentId,name,sort,isEnable
+		FROM sys_office
+		WHERE parentId = #{nodeId}
+	</select>
 </mapper>
